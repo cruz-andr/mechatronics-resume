@@ -1,4 +1,5 @@
 \documentclass[letterpaper,11pt]{article}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -7,7 +8,6 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage[T1]{fontenc}
@@ -18,30 +18,45 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
 \pdfgentounicode=1
 
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
-\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-  \textbf{#1} & #2 \\
-  \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-7pt}}
-\newcommand{\resumeProjectHeading}[2]{\item
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \small#1 & #2 \\
-  \end{tabular*}\vspace{-7pt}}
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -49,97 +64,102 @@
 
 \begin{document}
 
+%----------HEADING----------
 \begin{center}
-\textbf{\Huge \scshape Andres Cruz} \\ \vspace{1pt}
-\small \raisebox{-0.1\height}\faPhone\ +1-786-262-0053 ~ 
-\href{mailto:acruz24100@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{acruz24100@gmail.com}} ~ 
-\href{https://andrescruz.xyz/}{\raisebox{-0.2\height}\faExternalLinkAlt\ \underline{andrescruz.xyz}} ~ 
-\href{https://github.com/cruz-andr}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/cruz-andr}} \\
-\small 716 Columbus Ave, Boston, MA 02120
+    \textbf{\Huge \scshape Andres Cruz} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1-786-262-0053 ~ \href{mailto:acruz24100@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{acruz24100@gmail.com}} ~ 
+    \href{https://andrescruz.xyz/}{\raisebox{-0.2\height}\faExternalLinkAlt\ \underline{andrescruz.xyz}} ~ 
+    \href{https://github.com/cruz-andr}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/cruz-andr}} \\
+    \vspace{2pt}
+    \small Boston, MA $\mid$ \textbf{Available for Internship: May -- August 2026}
 \end{center}
 
-% [Use same preamble as above]
-
-% [Use same preamble as above]
-
+%-----------EDUCATION-----------
 \section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-  {Northeastern University}{Boston, MA}
-  {B.S. in Computer Science and Mechanical Engineering, GPA: 3.84/4.0}{Sep 2024 -- Present}
-  \resumeItemListStart
-    \resumeItem{Completed coursework in \textbf{Algorithms \& Data Structures, Program Design, Human-Computer Interaction, Calculus, Differential Equations, Linear Algebra, Physics for Engineering}}
-    \resumeItem{Dean's List (Fall 2024, Spring 2025)}
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {B.S. Computer Science and Mechanical Engineering (GPA: 3.84/4.0)}{Sep 2024 -- May 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Algorithms \& Data Structures, Differential Equations, Linear Algebra, Physics for Engineering, Embedded Systems, Artificial Intelligence, Object-Oriented Design (C++/Java).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\section{Experience}
-\resumeSubHeadingListStart
-\resumeSubheading
-  {\textbf{App Development Intern}}{Jun 2023 -- Aug 2023}
-  {Florida International Unisversity}{Miami, FL}
-  \resumeItemListStart
-    \resumeItem{Developed \textbf{full-stack web apps} with \textbf{React.js, Node.js, MySQL} for IoT device monitoring and control}
-    \resumeItem{Integrated \textbf{dashboards and APIs} to visualize real-time sensor data, improving response efficiency by 40\%}
-    \resumeItem{Documented \textbf{system architecture, code, and integration procedures} for interdisciplinary collaboration}
-  \resumeItemListEnd
-
-\resumeSubheading
-  {\textbf{Warehouse Safety Supervisor}}{Jul 2020 -- May 2024}
-  {All Florida Paper}{Medley, FL}
-  \resumeItemListStart
-    \resumeItem{Implemented automated monitoring system with \textbf{Ring cameras and sensors}, improving workflow efficiency by 15\%}
-    \resumeItem{Built spreadsheet automation tools for inventory tracking, reducing manual entry by 25\%}
-    \resumeItem{Created detailed documentation of monitoring and automation setups for maintainability}
-  \resumeItemListEnd
-
-\resumeSubheading
-  {\textbf{IT Intern}}{Jun 2022 -- May 2024}
-  {Christopher Columbus High School}{Miami, FL}
-  \resumeItemListStart
-    \resumeItem{Deployed and secured 800+ devices with automated scripts and monitoring, enhancing \textbf{cybersecurity} and reliability}
-    \resumeItem{Led Cyber Club to top 3 national placement, mentoring junior members in \textbf{hardware-software integration}}
-    \resumeItem{Produced comprehensive documentation of deployment procedures and security protocols}
-  \resumeItemListEnd
-
-\resumeSubheading
-  {\textbf{Technology Consultant}}{Aug 2020 -- Present}
-  {Cruz Computer Consultations}{Online}
-  \resumeItemListStart
-    \resumeItem{Built custom PCs and integrated \textbf{IoT devices} for 50+ clients}
-    \resumeItem{Created smart home and cloud-connected solutions, reducing setup time by 40\%}
-    \resumeItem{Documented system setups and user guides for efficient client handoff and maintenance}
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\section{Engineering Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-  {\textbf{Mechatronic Systems Design}}{2020 -- Present}
-  \resumeItemListStart
-    \resumeItem{Developed \textbf{bipedal robot} with custom servo control algorithms, IMU feedback, and mechanical stabilization}
-    \resumeItem{Integrated \textbf{facial recognition} (OpenCV, Python) with servo-actuated locking system via Raspberry Pi}
-    \resumeItem{Built Alexa-controlled smart switch using \textbf{ESP32 and AWS IoT Core} for real-time automation}
-    \resumeItem{Modeled 3D components in \textbf{SolidWorks and Fusion 360}; fabricated via 3D printing and laser cutting}
-    \resumeItem{Documented integration steps, code, and mechanical assemblies for reproducibility and team collaboration}
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
+%-----------TECHNICAL SKILLS----------- 
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Programming \& Embedded:} Python, C/C++, Arduino, Node.js, React.js, REST APIs \\
-\textbf{Mechanical \& CAD:} SolidWorks, Fusion 360, 3D Printing, Rapid Prototyping, Servo/Actuator Design \\
-\textbf{IoT \& Cloud:} Raspberry Pi, ESP32, AWS IoT Core, MQTT, Sensor Integration \\
-\textbf{Data Analysis \& Visualization:} Excel VBA, Power BI, Python (pandas, scikit-learn) \\
-\textbf{Languages:} English (Native), Spanish (Native), ASL (Intermediate)
-}}
-\end{itemize}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} C/C++ (Strong), Python, CUDA, MATLAB, SQL, JavaScript \\
+     \textbf{Robotics \& Simulation:} ROS2, Gazebo, OpenCV, IMU Sensor Fusion, PID Control, Kinematics \\
+     \textbf{Hardware \& Embedded:} Raspberry Pi, ESP32, Arduino, I2C/SPI/UART, SolidWorks, Fusion 360 \\
+     \textbf{Tools \& Platforms:} Linux (Ubuntu), Git, Docker, AWS IoT Core, PyTorch
+    }}
+ \end{itemize}
 
+%-----------PROJECTS (OPTIMUS FOCUSED)-----------
+\section{Engineering Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Custom Bipedal Robot Prototype} $|$ \emph{C++, Python, SolidWorks, IMU}}{2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Designed and fabricated a bipedal robotic platform using custom 3D-printed mechanical linkages and servo actuators.}
+            \resumeItem{Developed stabilization algorithms in \textbf{C++} using IMU feedback loops to maintain balance and correct posture.}
+            \resumeItem{Engineered the power distribution system and integrated a Raspberry Pi for high-level logic and gait planning.}
+            \resumeItem{Modeled all components in \textbf{SolidWorks} to ensure mechanical feasibility and center-of-mass optimization.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Prime Intellect (Open Source AI)} $|$ \emph{Python, PyTorch, LLMs}}{2025}
+          \resumeItemListStart
+            \resumeItem{Contributed to the \textbf{Prime Intellect} repository, focusing on evaluation modes for Large Language Model benchmarking.}
+            \resumeItem{Optimized Python scripts to improve reproducibility of research metrics for the open-source AI community.}
+            \resumeItem{Gained deep familiarity with model evaluation pipelines, relevant for Validating Sim-to-Real gaps.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Computer Vision Security System} $|$ \emph{OpenCV, Python, IoT}}{2022 -- 2024}
+          \resumeItemListStart
+            \resumeItem{Engineered a facial recognition entry system using \textbf{OpenCV} to automate access control with low latency.}
+            \resumeItem{Integrated sensor data streams via \textbf{MQTT} to a central hub for real-time monitoring of environmental states.}
+            \resumeItem{Reduced false-positive detections by optimizing image pre-processing pipelines before model inference.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{AI Academic Constraint Solver} $|$ \emph{React.js, Node.js, LLM Agents}}{In Progress}
+          \resumeItemListStart
+            \resumeItem{Building a logic-constrained AI agent to parse complex requirements and generate optimized schedules.}
+            \resumeItem{Applying prompt engineering and logical constraints to ensure zero-hallucination outputs for critical planning.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Full-Stack Development Intern}{Jun 2023 -- Aug 2023}
+      {Florida International University}{Miami, FL}
+      \resumeItemListStart
+        \resumeItem{Architected data visualization dashboards for IoT device monitoring, processing real-time sensor streams.}
+        \resumeItem{Optimized backend API performance in Node.js, reducing latency for critical data retrieval by 40\%.}
+        \resumeItem{Documented system architecture and API endpoints to facilitate handoff to engineering teams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Warehouse Automation Lead (Safety Supervisor)}{Jul 2020 -- May 2024}
+      {All Florida Paper}{Medley, FL}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed an automated monitoring system using sensors and cameras to track workflow efficiency.}
+        \resumeItem{utilized Python scripts to automate inventory tracking, reducing manual data entry errors by 25\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------
 \section{Interests}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{Robotics • IoT Systems • Automation • Innovation • CAD Design • Racket Sports • Fostering Animals}}
-\end{itemize}
-
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Humanoid Robotics • Physics Simulation • Open Source AI • Embedded Systems • Rapid Prototyping}}
+ \end{itemize}
 
 \end{document}
