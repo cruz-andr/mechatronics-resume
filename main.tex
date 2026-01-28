@@ -1,1 +1,145 @@
-mechatronics
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{#1} & #2 \\
+  \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Andres Cruz} \\ \vspace{1pt}
+\small \raisebox{-0.1\height}\faPhone\ +1-786-262-0053 ~ 
+\href{mailto:acruz24100@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{acruz24100@gmail.com}} ~ 
+\href{https://andrescruz.xyz/}{\raisebox{-0.2\height}\faExternalLinkAlt\ \underline{andrescruz.xyz}} ~ 
+\href{https://github.com/cruz-andr}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/cruz-andr}} \\
+\small 716 Columbus Ave, Boston, MA 02120
+\end{center}
+
+% [Use same preamble as above]
+
+% [Use same preamble as above]
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Northeastern University}{Boston, MA}
+  {B.S. in Computer Science and Mechanical Engineering, GPA: 3.84/4.0}{Sep 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Completed coursework in \textbf{Algorithms \& Data Structures, Program Design, Human-Computer Interaction, Calculus, Differential Equations, Linear Algebra, Physics for Engineering}}
+    \resumeItem{Dean's List (Fall 2024, Spring 2025)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {\textbf{App Development Intern}}{Jun 2023 -- Aug 2023}
+  {Florida International Unisversity}{Miami, FL}
+  \resumeItemListStart
+    \resumeItem{Developed \textbf{full-stack web apps} with \textbf{React.js, Node.js, MySQL} for IoT device monitoring and control}
+    \resumeItem{Integrated \textbf{dashboards and APIs} to visualize real-time sensor data, improving response efficiency by 40\%}
+    \resumeItem{Documented \textbf{system architecture, code, and integration procedures} for interdisciplinary collaboration}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {\textbf{Warehouse Safety Supervisor}}{Jul 2020 -- May 2024}
+  {All Florida Paper}{Medley, FL}
+  \resumeItemListStart
+    \resumeItem{Implemented automated monitoring system with \textbf{Ring cameras and sensors}, improving workflow efficiency by 15\%}
+    \resumeItem{Built spreadsheet automation tools for inventory tracking, reducing manual entry by 25\%}
+    \resumeItem{Created detailed documentation of monitoring and automation setups for maintainability}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {\textbf{IT Intern}}{Jun 2022 -- May 2024}
+  {Christopher Columbus High School}{Miami, FL}
+  \resumeItemListStart
+    \resumeItem{Deployed and secured 800+ devices with automated scripts and monitoring, enhancing \textbf{cybersecurity} and reliability}
+    \resumeItem{Led Cyber Club to top 3 national placement, mentoring junior members in \textbf{hardware-software integration}}
+    \resumeItem{Produced comprehensive documentation of deployment procedures and security protocols}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {\textbf{Technology Consultant}}{Aug 2020 -- Present}
+  {Cruz Computer Consultations}{Online}
+  \resumeItemListStart
+    \resumeItem{Built custom PCs and integrated \textbf{IoT devices} for 50+ clients}
+    \resumeItem{Created smart home and cloud-connected solutions, reducing setup time by 40\%}
+    \resumeItem{Documented system setups and user guides for efficient client handoff and maintenance}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Engineering Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{Mechatronic Systems Design}}{2020 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed \textbf{bipedal robot} with custom servo control algorithms, IMU feedback, and mechanical stabilization}
+    \resumeItem{Integrated \textbf{facial recognition} (OpenCV, Python) with servo-actuated locking system via Raspberry Pi}
+    \resumeItem{Built Alexa-controlled smart switch using \textbf{ESP32 and AWS IoT Core} for real-time automation}
+    \resumeItem{Modeled 3D components in \textbf{SolidWorks and Fusion 360}; fabricated via 3D printing and laser cutting}
+    \resumeItem{Documented integration steps, code, and mechanical assemblies for reproducibility and team collaboration}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Programming \& Embedded:} Python, C/C++, Arduino, Node.js, React.js, REST APIs \\
+\textbf{Mechanical \& CAD:} SolidWorks, Fusion 360, 3D Printing, Rapid Prototyping, Servo/Actuator Design \\
+\textbf{IoT \& Cloud:} Raspberry Pi, ESP32, AWS IoT Core, MQTT, Sensor Integration \\
+\textbf{Data Analysis \& Visualization:} Excel VBA, Power BI, Python (pandas, scikit-learn) \\
+\textbf{Languages:} English (Native), Spanish (Native), ASL (Intermediate)
+}}
+\end{itemize}
+
+\section{Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{Robotics • IoT Systems • Automation • Innovation • CAD Design • Racket Sports • Fostering Animals}}
+\end{itemize}
+
+
+\end{document}
